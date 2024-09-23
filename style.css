@@ -33,6 +33,9 @@ body{
     outline: none;
     background: #27403e;
 }
+.search input, select, textarea{
+    color: white;
+}
 .search input::placeholder {
     color: white;
 }
