@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("./assets/fonts/Montserrat-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("./assets/fonts/Montserrat-Medium.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("./assets/fonts/Montserrat-Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     margin: 20px;
     padding: 0;
@@ -33,6 +51,12 @@ body{
     outline: none;
     background: #27403e;
 }
+<<<<<<< HEAD
+=======
+.search input, select, textarea{
+    color: white;
+}
+>>>>>>> 1ccaa0f946297905a608d7dc1be686fef1b0ff69
 .search input::placeholder {
     color: white;
 }
@@ -49,5 +73,32 @@ body{
 }
 .city-display i{
     margin: 8px;
+    color: white;
+}
+ul{
+    display: flex;
+    padding: 0px;
+    gap: 20px;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 130px;
+    border: 3px #21A691 solid;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 0 0 10px 0 #21A691;
+}
+.temperature-content{
+    font-family: Montserrat-Regular;
+    color: white;
+    margin: 0px 0px 5px 0px;
+    font-size: 18px;
+}
+.date-content{
+    margin: 5px 0px 0px 0px;
+    font-family: Montserrat-Light;
     color: white;
 }
