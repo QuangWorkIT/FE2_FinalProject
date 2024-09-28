@@ -1,3 +1,6 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
 @font-face {
     font-family: "Montserrat-Light";
     src: url("./assets/fonts/Montserrat-Light.ttf") format("opentype");
@@ -51,12 +54,9 @@ body{
     outline: none;
     background: #27403e;
 }
-<<<<<<< HEAD
-=======
 .search input, select, textarea{
     color: white;
 }
->>>>>>> 1ccaa0f946297905a608d7dc1be686fef1b0ff69
 .search input::placeholder {
     color: white;
 }
