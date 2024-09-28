@@ -6,6 +6,7 @@
     <title>Weather Application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="./dailyWeatherStyle.css">
 </head>
 <body>
     <header class="head">
@@ -21,7 +22,47 @@
             </div>
         </div>
     </header>
-    
+    <br>
+    <hr class="linebreak">
+    <br>
+    <section class="show-weather">
+        <div class="current-weather">
+            <div class="date-time">
+                <h3>Date time</h3>
+            </div>
+            <div class="temperature">
+                <div class="text">
+                    <h1>Temperature</h1>
+                    <h3>Description</h3>
+                </div>
+                <div class="imgage">
+                    <img src="" alt="current weather image">
+                </div>
+            </div>
+            <hr class="weather-linebreak">
+
+            <div class="weather-properties">
+                <div class="wind">
+                    <h4>Wind</h4>
+                </div>
+                <div class="humidity">
+                    <h4>Humidity</h4>
+                </div>
+                <div class="visibility">
+                    <h4>visibility</h4>
+                </div>
+                <div class="pressure">
+                    <h4>Pressure</h4>
+                </div>
+                <div class="dew-point">
+                    <h4>dew point</h4>
+                </div>
+            </div>
+        </div>
+        <div class="current-location"></div>
+    </section>
+    <br>
+
     <script>
 
         const apiKey = "498925067a988273c8dc2d9a7a2fd1aa";
