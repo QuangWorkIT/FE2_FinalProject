@@ -1,0 +1,46 @@
+:root{
+    --outline-color : #21A691;
+}
+
+.linebreak, .weather-linebreak{
+    width: 700px;
+    border: 2px solid #21A691;
+    border-radius: 30px;
+}
+.weather-linebreak {
+    width: 80%;
+    margin-left: 10%;
+}
+.show-weather{
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    gap: 1%;
+}
+
+.current-weather {
+    width: 50%; 
+    height: 100%;
+    border: 3px solid var(--outline-color);
+    box-shadow: 0 0 10px 0 var(--outline-color);
+    padding: 1.5%;
+}
+
+.current-location {
+    width: 50%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.current-weather, .current-location  {
+    border-radius: 15px;
+}
+
+.weather-properties , .temperature{
+    display: grid;
+}
+.weather-properties{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.temperature{
+    grid-template-columns: 50% 50%;
+}

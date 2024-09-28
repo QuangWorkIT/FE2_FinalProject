@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 *{
     margin: 0; padding: 0; box-sizing: border-box;
 }
+=======
+<<<<<<< HEAD
+*{margin: 0; padding: 0; box-sizing: border-box;}
+=======
+>>>>>>> a6339d6ff1479e4d99ff682765f77b310f41f851
 @font-face {
     font-family: "Montserrat-Light";
     src: url("./assets/fonts/Montserrat-Light.ttf") format("opentype");
@@ -19,22 +25,25 @@
     font-weight: normal;
     font-style: normal;
 }
+>>>>>>> main
 body{
     margin: 20px;
     padding: 0;
     box-sizing: border-box;
     background: #27403e;
+    height: 100%;
 }
+
 .head {
     display: flex;
     align-items: center;
-    gap: 3%;
+    gap: 0.5%;
 }
 .card {
     background: #27403e;
     border-radius: 50px;
     width: 300px;
-    height: 35px;
+    height: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -63,7 +72,7 @@ body{
 .city-display{
     background: #27403e;
     width: 150px;
-    height: 35px;
+    height: 40px;
     display: flex;
     border-radius: 50px;
     justify-content: flex-start;
