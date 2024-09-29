@@ -1,12 +1,8 @@
-<<<<<<< HEAD
+
 *{
     margin: 0; padding: 0; box-sizing: border-box;
 }
-=======
-<<<<<<< HEAD
-*{margin: 0; padding: 0; box-sizing: border-box;}
-=======
->>>>>>> a6339d6ff1479e4d99ff682765f77b310f41f851
+
 @font-face {
     font-family: "Montserrat-Light";
     src: url("./assets/fonts/Montserrat-Light.ttf") format("opentype");
@@ -25,7 +21,7 @@
     font-weight: normal;
     font-style: normal;
 }
->>>>>>> main
+
 body{
     margin: 20px;
     padding: 0;
