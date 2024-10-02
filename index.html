@@ -6,14 +6,14 @@
     <title>Weather Application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
-    <link rel="stylesheet" href="./weatherDisplay.css">
+    <link rel="stylesheet" href="./WeatherDisplayStyle.css">
 </head>
 <body>
     <header class="head">
         <div class ="card">
             <div class ="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search.....">
+                <input type="text" id = "city" placeholder="Search.....">
             </div>
         </div>
         <div class="city-display">
@@ -39,46 +39,46 @@
                         </span>
                     </h2>
                     <div class="temperature">
-                        <h1>24'C</h1>
+                        <h1>24°C</h1>
                     </div>
                     <div class="weather-description">
                         <p>Mostly cloudy</p>
                     </div>
                 </div>
                 
-                <img src="./assets/images/clouds.png" alt="weather-img">
+                <img id="weather-icon" src="./assets/images/clouds.png" alt="weather-img">
             </div>
 
             <hr class= "line-break" style="width: 100%;">
             <!-- Common weather features -->
             <div class="weather-features">
-                <div class="featuer" id="wind">
-                    <h4>Wind</h4>
-                    <p class="feature-description">
+                <div class="featuer" >
+                    <h5>Wind</h5>
+                    <p class="feature-description" id="wind">
                         12km/h
                     </p>
                 </div>
-                <div class="featuer" id="humidity">
-                    <h4>Humidity</h4>
-                    <p class="feature-description">
+                <div class="featuer" >
+                    <h5>Humidity</h5>
+                    <p class="feature-description" id="humidity">
                         12km/h
                     </p>
                 </div>
-                <div class="featuer" id="visibility">
-                    <h4>Visibility</h4>
-                    <p class="feature-description">
+                <div class="featuer">
+                    <h5>Visibility</h5>
+                    <p class="feature-description"  id="visibility">
                         12km/h
                     </p>
                 </div>
-                <div class="featuer" id="pressure">
-                    <h4>Pressure</h4>
-                    <p class="feature-description">
+                <div class="featuer" x>
+                    <h5>Pressure</h5>
+                    <p class="feature-description"  id="visibility">
                         12km/h
                     </p>
                 </div>
-                <div class="featuer" id="dew-point">
-                    <h4>Dew point</h4>
-                    <p class="feature-description">
+                <div class="featuer">
+                    <h5>Dew point</h5>
+                    <p class="feature-description"  id="dew-point">
                         12km/h
                     </p>
                 </div>
@@ -86,8 +86,9 @@
         </div>
 
         <!-- Add a map -->
-            <iframe src="https://www.google.com/maps/embed/
-            " frameborder="0" class="map"></iframe>
+        <iframe src="https://www.google.com/maps/embed/
+            " frameborder="0" class="map">
+        </iframe>
     </section>
 
     <section>
@@ -102,5 +103,6 @@
         </ul>
     </section>
     <script src="./script.js"></script>
+    <script src="./script/WeatherDisplayScript.js"></script>
 </body>
 </html>
