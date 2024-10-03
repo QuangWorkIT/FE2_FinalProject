@@ -55,6 +55,7 @@ body{
     color: white;
 }
 .search input {
+    width: 230px;
     border: none;
     outline: none;
     background: #27403e;
