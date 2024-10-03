@@ -6,6 +6,7 @@
     <title>Weather Application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="./weatherDisplay.css">
 </head>
 <body>
     <header class="head">
@@ -21,6 +22,74 @@
             </div>
         </div>
     </header>
+
+
+    <hr class= "line-break">
+
+    <!-- Display current weather -->
+    <section class="weather-display">
+        <!-- Current weather information -->
+        <div class="weather-content">
+            <div class="text-container">
+                <div class="text">
+                    <h2 class="weather-current-date">
+                        <span style="font-weight: bold;">Tuesday,</span> 
+                        <span>
+                            04:00AM
+                        </span>
+                    </h2>
+                    <div class="temperature">
+                        <h1>24'C</h1>
+                    </div>
+                    <div class="weather-description">
+                        <p>Mostly cloudy</p>
+                    </div>
+                </div>
+                
+                <img src="./assets/images/clouds.png" alt="weather-img">
+            </div>
+
+            <hr class= "line-break" style="width: 100%;">
+            <!-- Common weather features -->
+            <div class="weather-features">
+                <div class="featuer" id="wind">
+                    <h4>Wind</h4>
+                    <p class="feature-description">
+                        12km/h
+                    </p>
+                </div>
+                <div class="featuer" id="humidity">
+                    <h4>Humidity</h4>
+                    <p class="feature-description">
+                        12km/h
+                    </p>
+                </div>
+                <div class="featuer" id="visibility">
+                    <h4>Visibility</h4>
+                    <p class="feature-description">
+                        12km/h
+                    </p>
+                </div>
+                <div class="featuer" id="pressure">
+                    <h4>Pressure</h4>
+                    <p class="feature-description">
+                        12km/h
+                    </p>
+                </div>
+                <div class="featuer" id="dew-point">
+                    <h4>Dew point</h4>
+                    <p class="feature-description">
+                        12km/h
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add a map -->
+            <iframe src="https://www.google.com/maps/embed/
+            " frameborder="0" class="map"></iframe>
+    </section>
+
     <section>
         <ul>
         <li><p class="date-content">9 Mon</p><div><img src="./assets/images/clear.png" alt="#"  width="80px" height="80px"></div> <p class="temperature-content">27&deg;</p></li>
