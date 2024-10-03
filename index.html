@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
-    <link rel="stylesheet" href="./WeatherDisplayStyle.css">
+    <link rel="stylesheet" href="./style/WeatherDisplayStyle.css">
 </head>
 <body>
     <header class="head">
@@ -29,19 +29,19 @@
     <!-- Display current weather -->
     <section class="weather-display">
         <!-- Current weather information -->
-        <div class="weather-content">
+        <div class="weather-content" id="weather-content">
             <div class="text-container">
                 <div class="text">
-                    <h2 class="weather-current-date">
+                    <h2 class="weather-current-date" id="date">
                         <span style="font-weight: bold;">Tuesday,</span> 
                         <span>
                             04:00AM
                         </span>
                     </h2>
-                    <div class="temperature">
+                    <div class="temperature" id="temperature">
                         <h1>24°C</h1>
                     </div>
-                    <div class="weather-description">
+                    <div class="weather-description" id="weather-description">
                         <p>Mostly cloudy</p>
                     </div>
                 </div>
@@ -70,9 +70,9 @@
                         12km/h
                     </p>
                 </div>
-                <div class="featuer" x>
+                <div class="featuer" >
                     <h5>Pressure</h5>
-                    <p class="feature-description"  id="visibility">
+                    <p class="feature-description"  id="pressure">
                         12km/h
                     </p>
                 </div>
@@ -102,7 +102,7 @@
         <li><p class="date-content">15 Sun</p><div><img src="./assets/images/clear.png" alt="#" width="80px" height="80px"></div><p class="temperature-content">27&deg;</p></li>
         </ul>
     </section>
-    <script src="./script.js"></script>
+    <script type = "module" src="./script/script.js"></script>
     <script src="./script/WeatherDisplayScript.js"></script>
 </body>
 </html>
