@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
-    <link rel="stylesheet" href="./style/WeatherDisplayStyle.css">
+    <link rel="stylesheet" href="./style/weatherDisplayStyle.css">
 </head>
 <body>
     <header class="head">
@@ -32,9 +32,9 @@
         <div class="weather-content" id="weather-content">
             <div class="text-container">
                 <div class="text">
-                    <h2 class="weather-current-date" id="date">
-                        <span style="font-weight: bold;">Tuesday,</span> 
-                        <span>
+                    <h2 class="weather-current-date">
+                        <span style="font-weight: bold;" id="date">Tuesday,</span> 
+                        <span id="time">
                             04:00AM
                         </span>
                     </h2>
@@ -86,8 +86,9 @@
         </div>
 
         <!-- Add a map -->
-        <iframe src="https://www.google.com/maps/embed/
-            " frameborder="0" class="map">
+        <iframe 
+        src="https://www.google.com/maps/embed/"
+        frameborder="0" class="map" id="map">
         </iframe>
     </section>
 
@@ -103,6 +104,6 @@
         </ul>
     </section>
     <script type = "module" src="./script/script.js"></script>
-    <script src="./script/WeatherDisplayScript.js"></script>
+    <script src="./script/displayScript.js"></script>
 </body>
 </html>
