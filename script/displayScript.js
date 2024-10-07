@@ -27,6 +27,7 @@ function disPlayWeather(data) {
     const weatherIcon = document.getElementById('weather-icon')
     const map = document.getElementById('map')
     
+    const cityDisplay = document.querySelector('.city-display .city');
     if(data.cod === '404'){
         alert(data.message)
     }else{

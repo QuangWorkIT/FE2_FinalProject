@@ -47,31 +47,29 @@ body{
     width: 300px;
     height: 40px;
     display: flex;
+    padding: 10px;
     justify-content: flex-start;
     align-items: center;
     border: 3px solid #21A691;
     box-shadow: 0 0 10px 0 #21A691;
 }
-.search{
-    display: flex;
-    gap: 15px;
-}
-.search i {
+.card i {
     margin: 8px;
     color: white;
 }
-.search input {
-    width: 230px;
+.card input {
+    width: 100%;
     border: none;
     outline: none;
     background: #27403e;
 }
 
-.search input, select, textarea{
+.card input, select, textarea{
     color: white;
 }
-.search input::placeholder {
+.card input::placeholder {
     color: white;
+    font-family: "Montserrat-Light";
 }
 .city-display{
     background: #27403e;
@@ -83,10 +81,19 @@ body{
     align-items: center;
     border: 3px solid #21A691;
     box-shadow: 0 0 10px 0 #21A691;
+    padding: 10px;
+    gap: 15px;
 }
+
 .city-display i{
     margin: 8px;
     color: white;
+    display: inline;
+}
+.city-display h3{
+    color: white;
+    display: inline;
+    font-family: "Montserrat-Regular";
 }
 ul{
     display: flex;
@@ -115,4 +122,40 @@ li{
     font-family: Montserrat-Light;
     color: white;
     font-size: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .head{
+        justify-content: space-around;
+    }
+    .card{
+        width: 48%;
+    }
+    .city-display{
+        width: 48%;
+    }
+    .card input::placeholder{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .head{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .card{
+        width: 100%;
+    }
+    .city-display{
+        width: 100%;
+    }
+    .card input {
+        width: 300px;
+
+    }
+    .card input::placeholder{
+        font-size: 15px;
+    }
 }
