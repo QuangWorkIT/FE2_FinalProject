@@ -100,14 +100,15 @@
     .weather-display {
         flex-direction: column;
         height: 600px;
+        gap: 2%;
     }
     .weather-content, .map{
         width: 100%;
     }
     .weather-content {
-        height: 60%;
+        height: 58%;
     }
-    .map{height: 40%;}
+    .map{height: 38%;}
 }
 
 @media only screen and (max-width: 600px){
@@ -123,15 +124,13 @@
         height: auto;
         padding-left: 2%;
     }
-    .weather-current-date span {
-        display: block;
-    }
     .weather-current-date {
         font-size: 18px;
+        width: 300px;
     }
     .temperature {
         font-size: 25px;
-    }
+    }   
     .weather-description{
         font-size: 18px;
     }
@@ -144,7 +143,8 @@
         height: 70%;
         display: flex;
         flex-direction: column;
-        padding-left: 1%;
+        padding: 0 0 0 1%;
+        gap: 2%;
     }
     .featuer{
         height: 20%;
@@ -159,6 +159,7 @@
     .featuer p {
         position: absolute;
         right: 10px;
+        width: 100px;
     }
     .map {
         height: 24%;
