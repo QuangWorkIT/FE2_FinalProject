@@ -83,10 +83,17 @@ body{
     align-items: center;
     border: 3px solid #21A691;
     box-shadow: 0 0 10px 0 #21A691;
+
 }
+
 .city-display i{
     margin: 8px;
     color: white;
+    display: inline;
+}
+.city h3{
+    color: white;
+    display: inline;
 }
 ul{
     display: flex;
@@ -115,4 +122,19 @@ li{
     font-family: Montserrat-Light;
     color: white;
     font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .head{
+        justify-content: space-around;
+    }
+    .card{
+        width: 48%;
+    }
+    .city-display{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 500px) {
+    
 }
