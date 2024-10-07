@@ -28,10 +28,11 @@
     box-shadow: 0 0 10px 0 var(--outline);
     color: var(--text);
     padding: 1%;
-    display: flex;
     flex-direction: column;
     position: relative;
+    display: flex;
 }
+
 .text-container {
     display: flex;
     height: 60%;
@@ -55,6 +56,7 @@
     font-size: 25px;
     font-family: Montserrat-Light;
 }
+
 .text-container img {
     max-width: 200px;
     max-height: 200px;
@@ -88,8 +90,78 @@
     font-weight: normal;
     font-family: Montserrat-Medium;
 }
+
 .map {
-    border: none; /* Remove any border if necessary */
-    border-radius: 15px; /* Match the style of your weather content */
-    box-shadow: 0 0 10px rgba(223, 217, 217, 0.401); /* Optional shadow for aesthetics */
+    box-shadow: 0 0 10px rgba(223, 217, 217, 0.401);
+}
+
+/* Responsives */
+@media only screen and (max-width: 950px){
+    .weather-display {
+        flex-direction: column;
+        height: 600px;
+        gap: 2%;
+    }
+    .weather-content, .map{
+        width: 100%;
+    }
+    .weather-content {
+        height: 58%;
+    }
+    .map{height: 38%;}
+}
+
+@media only screen and (max-width: 600px){
+    .weather-display {
+        height: 750px;
+        gap: 2%;
+    }
+    .weather-content{
+        height: 80%;
+    }
+    .text-container {
+        display: block;
+        height: auto;
+        padding-left: 2%;
+    }
+    .weather-current-date {
+        font-size: 18px;
+        width: 300px;
+    }
+    .temperature {
+        font-size: 25px;
+    }   
+    .weather-description{
+        font-size: 18px;
+    }
+    .weather-description p {display: block;}
+    /* Ensure img is hidden */
+    .text-container img {
+        display: none;
+    }
+    .weather-features {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 1%;
+        gap: 2%;
+    }
+    .featuer{
+        height: 20%;
+        padding: 2%;
+        position: relative;
+    }
+    .featuer h5,p{display: inline;}
+    
+    .featuer h5{
+        font-size: 20px;
+    }
+    .featuer p {
+        position: absolute;
+        right: 10px;
+        width: 100px;
+    }
+    .map {
+        height: 24%;
+    }
 }

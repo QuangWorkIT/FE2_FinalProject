@@ -5,7 +5,6 @@ function getWeather(city){
     fetch(currentWeatherUrl)
         .then(response => response.json())
         .then(data => {
-            console.log(data.name)
             disPlayWeather(data)    
         })
         .catch(error => {
@@ -47,9 +46,9 @@ function disPlayWeather(data) {
         const visibilityData = data.visibility
         const pressureData = data.main.pressure
         const dewPointData = temp - (100-humidityData)/5
-        const mapURL = `https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=${data.coord.lat}&lon=${data.coord.lon}&zoom=5`;
+        const mapURL = `https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=${data.coord.lat}&lon=${data.coord.lon}&zoom=6`;
+        
         //// update fetched data to all weather elements
-
         // weather information
         date.innerText = dayMonth +", "
         time.innerText = localTime
@@ -94,8 +93,8 @@ document.addEventListener('keydown', event => {
         if(cityValue.length > 1){
             const tmp = cityValue.trim().split(" ");
             for(let i = 0; i < tmp.length; i++)
-                city += tmp[i]
+                city += tmp[i] + " "
         }
-        getWeather(city)
+        getWeather(city.trim())
     }
 });
