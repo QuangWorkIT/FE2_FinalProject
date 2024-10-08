@@ -98,8 +98,8 @@ body{
 ul{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding-bottom: 5px;
+    gap: 40px;
+    padding-bottom: 15px;
 }
 li{
     display: flex;
@@ -157,5 +157,9 @@ li{
     }
     .card input::placeholder{
         font-size: 15px;
+    }
+    #forecast-container{
+        
+        overflow: scroll;
     }
 }
