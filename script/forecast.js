@@ -4,6 +4,9 @@ async function getWeatherForecast(city) {
 
     try {
         const response = await fetch(forecastUrl);
+        if (!response.ok) {
+            return;
+        }
         const data = await response.json();
         displayForecast(data.list);
         console.log(data);
@@ -39,7 +42,10 @@ function displayForecast(forecastData) {
 
 document.addEventListener('keydown', event => {
     if (event.key === "Enter") {
-        const cityValue = document.getElementById('city').value
+        const cityValue = document.getElementById('city').value;
+        if(!cityValue.trim()){
+            return;
+        }
         getWeatherForecast(cityValue)
     }
 });
