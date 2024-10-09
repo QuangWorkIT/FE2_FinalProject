@@ -73,26 +73,23 @@ body{
 }
 .city-display{
     background: #27403e;
-    width: 150px;
+    min-width: 160px;
     height: 40px;
     display: flex;
     border-radius: 50px;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
     border: 3px solid #21A691;
     box-shadow: 0 0 10px 0 #21A691;
     padding: 10px;
-    gap: 15px;
 }
 
 .city-display i{
     margin: 8px;
     color: white;
-    display: inline;
 }
 .city-display h3{
     color: white;
-    display: inline;
     font-family: "Montserrat-Regular";
 }
 ul{
