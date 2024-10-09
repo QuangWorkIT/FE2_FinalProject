@@ -133,6 +133,7 @@
     }   
     .weather-description{
         font-size: 18px;
+        min-width: 300px;
     }
     .weather-description p {display: block;}
     /* Ensure img is hidden */
@@ -148,7 +149,7 @@
     }
     .featuer{
         height: 20%;
-        padding: 2%;
+        padding: 4.5% 2% 2% 2%;
         position: relative;
     }
     .featuer h5,p{display: inline;}
