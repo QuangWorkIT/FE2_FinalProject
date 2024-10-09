@@ -73,7 +73,7 @@ body{
 }
 .city-display{
     background: #27403e;
-    width: 150px;
+    min-width: 160px;
     height: 40px;
     display: flex;
     border-radius: 50px;
