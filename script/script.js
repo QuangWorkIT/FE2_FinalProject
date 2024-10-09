@@ -24,7 +24,9 @@ document.addEventListener('keydown', async event =>  {
             return;
         }
 
-        let check = await getWeather(city.value.trim())
+        let check = await getWeather(city.value.trim()); 
+        await getWeatherForecast(city.value.trim()); 
+        getWeatherForecast(city.value.trim())
         if(check){
             const cityName = document.getElementById('city-name');
             let a = city.value.substring(0,1).toUpperCase();
