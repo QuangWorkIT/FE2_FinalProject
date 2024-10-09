@@ -40,17 +40,6 @@ function displayForecast(forecastData) {
 document.addEventListener('keydown', event => {
     if (event.key === "Enter") {
         const cityValue = document.getElementById('city').value
-        if (!cityValue) {
-            alert("Enter an city")
-            return;
-        }
-
-        let city = "";
-        if (cityValue.length > 1) {
-            const tmp = cityValue.trim().split(" ");
-            for (let i = 0; i < tmp.length; i++)
-                city += tmp[i]
-        }
-        getWeatherForecast(city)
+        getWeatherForecast(cityValue)
     }
 });
