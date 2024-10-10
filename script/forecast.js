@@ -40,12 +40,3 @@ function displayForecast(forecastData) {
     });
 }
 
-document.addEventListener('keydown', event => {
-    if (event.key === "Enter") {
-        const cityValue = document.getElementById('city').value;
-        if(!cityValue.trim()){
-            return;
-        }
-        getWeatherForecast(cityValue)
-    }
-});
